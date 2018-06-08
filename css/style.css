@@ -1,0 +1,194 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* FIN DU RESET ---------------------------------- */
+
+#main{
+    width: 1000px;
+    margin: 0 auto;
+}
+.atc{
+    height: 400px;
+}
+.txt{
+    display: inline-block;
+    height: 400px;
+}
+.img{
+    display: inline-block;
+    height: 400px;
+}
+/* ARTICLE 1111111111111111111111111111111 */
+#article1{
+    background: lightblue;
+}
+#text1{
+    width: 400px;
+    overflow: auto;
+    position: relative;
+}
+#text1 p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+}
+#text1 h2{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left:50%;
+    transform: translate(-20%, -50%);
+    -ms-transform:translate(-20%, -50%);
+}
+#image1{
+    width: 600px;
+    overflow: auto;
+}
+/* FIN ARTICLE 1111111111111111111111111111 */
+
+/* ARTICLE 222222222222222222222222222222222 */
+#article2{
+    background: lightcoral;
+}
+#text2{
+    width: 300px;
+    overflow: auto;
+    position: relative;
+    
+}
+#text2 p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+}
+#text2 h2{
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left:40%;
+    transform: translate(-10%, -40%);
+    -ms-transform:translate(-10%, -40%);
+}
+#image2{
+    width: 700px;
+    overflow: auto;
+}
+/* FIN ARTICLE 22222222222222222222222222222 */
+
+/* ARTICLE 33333333333333333333333333 */
+#article3{
+    background: lightgreen;
+}
+#text3{
+    width: 400px;
+    overflow: auto;
+    position: relative;
+}
+#text3 p{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+}
+#text3 h2{
+    margin: 0;
+    position: absolute;
+    top: 10%;
+    left:40%;
+    transform: translate(-10%, -40%);
+    -ms-transform:translate(-10%, -40%);
+}
+#image3{
+    width: 600px;
+    overflow: auto;
+}
+/* FIN ARTICLE 3333333333333333333333333333333 */
+
+/* ARTICLE 444444444444444444444444444444 */
+#article4{
+    background: lightsalmon;
+    height: 600px;
+    width: 1000px;
+    margin: 0 auto;
+}
+/* FIN ARTICLE 44444444444444444444444444444 */
+
+/* HEADERRRRRRRRRRRRRRRRRRRRRRRR */
+#header{
+    background: lightgoldenrodyellow;
+    height: 700px;
+    position: relative
+}
+#header img{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    -ms-transform:translate(-50%, -50%);
+}
+#header nav ul li{
+    float: right;
+}
+/* FIN HEADERRRRRRRRRRRRRRRRRRRRRRRR */
+
+#footer{
+    background: lightslategray;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
