@@ -65,9 +65,7 @@ table {
     height: 400px;
 }
 /* ARTICLE 1111111111111111111111111111111 */
-#article1{
-    background: lightblue;
-}
+
 #text1{
     width: 400px;
     overflow: auto;
@@ -96,9 +94,7 @@ table {
 /* FIN ARTICLE 1111111111111111111111111111 */
 
 /* ARTICLE 222222222222222222222222222222222 */
-#article2{
-    background: lightcoral;
-}
+
 #text2{
     width: 300px;
     overflow: auto;
@@ -128,9 +124,7 @@ table {
 /* FIN ARTICLE 22222222222222222222222222222 */
 
 /* ARTICLE 33333333333333333333333333 */
-#article3{
-    background: lightgreen;
-}
+
 #text3{
     width: 400px;
     overflow: auto;
@@ -160,7 +154,6 @@ table {
 
 /* ARTICLE 444444444444444444444444444444 */
 #article4{
-    background: lightsalmon;
     height: 600px;
     width: 1000px;
     margin: 0 auto;
@@ -169,7 +162,6 @@ table {
 
 /* HEADERRRRRRRRRRRRRRRRRRRRRRRR */
 #header{
-    background: lightgoldenrodyellow;
     height: 700px;
     position: relative
 }
@@ -182,13 +174,34 @@ table {
     -ms-transform:translate(-50%, -50%);
 }
 #header nav ul li{
-    float: right;
+   float: right;
+   
 }
 /* FIN HEADERRRRRRRRRRRRRRRRRRRRRRRR */
 
 #footer{
-    background: lightslategray;
     width: 1000px;
     height: 500px;
     margin: 0 auto;
+    position: relative;
+}
+#footer address{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:20%;
+    transform: translate(-50%, -20%);
+    -ms-transform:translate(-50%, -20%);
+}
+#footer nav ul li{
+    float: right;
+    margin-top: 400px;
+}
+#footer h1{
+    margin: 0;
+    position: absolute;
+    top: 20%;
+    left:20%;
+    transform: translate(-20%, -20%);
+    -ms-transform:translate(-20%, -20%);
 }
