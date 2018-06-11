@@ -1,0 +1,228 @@
+*{ /* étoile signifie tout all */
+
+    box-sizing: border-box;
+ 
+ }
+ 
+ html, body, div, span, applet, object, iframe,
+ 
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+ 
+ a, abbr, acronym, address, big, cite, code,
+ 
+ del, dfn, em, img, ins, kbd, q, s, samp,
+ 
+ small, strike, strong, sub, sup, tt, var,
+ 
+ b, u, i, center,
+ 
+ dl, dt, dd, ol, ul, li,
+ 
+ fieldset, form, label, legend,
+ 
+ table, caption, tbody, tfoot, thead, tr, th, td,
+ 
+ article, aside, canvas, details, embed,
+ 
+ figure, figcaption, footer, header, hgroup,
+ 
+ menu, nav, output, ruby, section, summary,
+ 
+ time, mark, audio, video {
+ 
+    margin: 0;
+ 
+     padding: 0;
+ 
+     border: 0;
+ 
+     font-size: 100%;
+ 
+     font: inherit;
+ 
+     vertical-align: baseline;
+ 
+ }
+ /* reset caca */
+body{
+    background: url(../img/concrete-texture.png);
+    font-family: 'Oswald', sans-serif;
+}
+h1{
+    font-size:45px;
+    font-family: 'Anton', sans-serif;
+    color: #2980b9;
+    text-align: center;
+    letter-spacing: 1px;
+}
+h2{
+    font-size: 35px;
+    color: #2c3e50;
+    padding:20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h3{
+    font-size: 22px;
+    color: #2c3e50;
+    padding:15px;
+    text-shadow: 1px 1px 2px #aaa;
+}
+h4{
+    text-align: center;
+    margin-top:30px;
+}
+blockquote{
+  /*   font-style:italic; */
+    font-size: 120%;
+    position: relative;
+}
+blockquote i{
+    font-size: 10px;
+}
+strong{
+    font-weight: bold;
+}
+header {
+    height: 175px;
+    background: #2c3e50;
+}
+header a{ 
+    text-decoration: none;
+    color: #10828c;
+}
+nav {
+    background: #2980b9;
+    height: 70px;
+    border-bottom: 8px solid #6acafc;
+    text-align: center;
+    padding: 15px;
+}
+nav a{
+    background: #6acafc;
+    color: #2c3e50;
+    margin: 10px;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-family:'Oswald', sans-serif;
+    border-radius:10px 0;
+    border: 2px solid white;
+    transition:0.5s;/*  transition sur le a marche avec le hover*/
+   
+} 
+nav a:hover{
+    color:#fff;
+    background: #a6d6c3;
+   
+}
+
+#social{
+    float: left;
+    width: 25%;
+}
+#social i{
+    background: #2c3e50;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 30px 0 0;
+    display: block; 
+}
+.clear{
+    clear: both;
+}
+#logo{
+    float: left;
+    width: 25%;
+    background: #2c3e50;
+    padding: 15px;
+    text-align: center;
+}
+#slogan{
+    float: left;
+    width: 50%;
+    padding-top: 50px;
+    background: #2c3e50;
+
+}
+main{
+    background: whitesmoke;
+    width: 1000px;
+    margin: 0 auto;
+}
+aside{
+    height: 250px;
+    background: #a6d6d3;
+}
+section{
+    margin-top: 50px;
+    padding: 20px;
+}
+footer{
+    height: 30px;
+    background: #2980b9;
+}
+button{
+    font-size: 350%;
+    background: transparent;
+    border:none;
+    color: #2c3e50;
+    position: fixed; /* le button est fixé à 40px du bas et à 20 de la droîte */
+    bottom: 40px;
+    right: 20px;
+}
+.active{
+    background: lightseagreen;
+}
+.lemonada {
+    font-family: 'Lemonada', sans-serif;
+}
+.select{
+    color: lightcoral;
+}
+.select ol li:first-of-type{
+    background-color: lightblue;
+}
+.select ol li:last-of-type{
+    background: lightgreen;
+}
+.select ol li:nth-of-type(4), ol li:nth-of-type(6){
+    background: lightsalmon;
+}
+/* .select *:last-child{
+    border: thin solid #333; 
+} */ /* <----------- marche pas */
+.select .zoneA{
+    color: orangered;
+}
+.select .zoneB{
+    color: olive;
+}
+.select div:not(.zoneB) {
+    font-size: 100px;
+
+}
+.couleurbleu{
+    background: blue;
+}
+.select #zoneD span{
+    color: #aaa;
+    font-style: italic;
+}
+.imageFond{
+    background: url(../img/fond.jpg) no-repeat;
+    background-size: cover;
+    margin-bottom: 20px; 
+}
+.imageFond p{
+    width: 75%;
+    margin: 100px auto 200px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 10px;
+    font-size: 120%;
+}
+img[src="img/toureiffel.jpg"]{
+    display: block;
+    margin: 20px;
+}
