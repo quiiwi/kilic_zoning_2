@@ -158,10 +158,7 @@ section{
     margin-top: 50px;
     padding: 20px;
 }
-footer{
-    height: 30px;
-    background: #2980b9;
-}
+
 button{
     font-size: 350%;
     background: transparent;
@@ -222,7 +219,99 @@ button{
     border-radius: 10px;
     font-size: 120%;
 }
-img[src="img/toureiffel.jpg"]{
+img[src="img/toureiffel.jpg"]{/* on ne cible que cette image là */
     display: block;
     margin: 20px;
+    padding: 20px;
+    background: lightcoral;
+    margin: 0 auto;
+}
+.GG{
+    margin:  20px;
+    border: 5px solid #fae;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.6);
+    transition: 1s;
+}
+.GG:hover{
+    border: 15px solid #fae;
+    margin: 10px;
+    transform: rotate(-8deg);
+}
+.rotation360:hover{
+    transform: rotate(-360deg);
+}
+.centre{
+    width: 200px;
+    height: 200px;
+    background: #10828c;
+    margin: 0 auto;
+}
+.absolute{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    background: yellow;
+}
+.relative{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    background: #10828c;
+    left:100px;
+    bottom: 10px;
+}
+.relative div{
+    background: #6acafc;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right:0;
+    top: 0;
+}
+.pourcentage{
+    background: purple;
+    font-size: 22px;
+    color: black;
+}
+.trente{
+    width: 30%;
+    height: 100px;
+    background-color: red;
+    font-size: 22px;
+    color: black;
+}
+.cinquente{
+    width: 50%;
+    height: 100px;
+    background-color: blue;
+    font-size: 22px;
+    color: black;
+}
+.cent{
+    width: 100%;
+    height: 100px;;
+    background-color: yellow;
+    font-size: 22px;
+    color: black;
+}
+.footer1{
+    width: 33%;
+    background: red;
+    display: inline-block;
+}
+.footer2{
+    width: 33%;
+    background: blue;
+    display: inline-block;
+}
+.footer3{
+    width: 33%;
+    background: yellow;
+    display: inline-block;
+}
+footer .andree{
+    text-align: center;
+    margin:0 auto;
 }
