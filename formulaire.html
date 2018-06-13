@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- la description qui s'affiche sur un résultant de recherche google -->
+    <meta name="description" content="Site de la phase 2 Kilic Aslan Pantin 2018/2019 LepoleS">
+    <meta name="keywords" content="HTML, CSS LepoleS">
+    <meta name="author" content="Kilic Aslan">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
+    <!-- font awesome en cdn -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <title>Maquette</title>
+    <!-- la feuille de style -->
+    <link rel="stylesheet" href="css/stylecorrection.css">
+</head>
+<body>
+ 
+    <header>
+        <div id="logo">
+            <a href="#logo">
+                <button type="button"><i class="fas fa-arrow-circle-up" aria-hidden="true"></i></button>
+            </a>
+            <img src="img/logo.png" alt="logo">
+        </div><!-- fin id logo -->
+       <div id="slogan"> <a href="indexcorrection.html" title="Les musées du monde"><h1>Les musées du monde</h1></a></div>
+        <div id="social">
+            <a href="yoloswagg.fr" target="_blank"><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+            <a href="yoloswagg.fr" target="_blank"><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+        </div><!-- fin id social -->
+        <div class="clear"></div>
+    </header>
+    <nav>
+        <div id="ancreNav">
+            <a title="index" href="indexcorrection.html" >Menu</a>
+            <a title="texte" href="text.html">Texte</a>
+            <a title="selecteur" href="selecteur.html">Selecteur</a>
+            <a title="image" href="image.html">Image</a>
+            <a title="position" href="position.html">Position</a>
+            <a title="zoning" href="zoning.html">Zoning</a>
+            <a title="tableau" href="tableau.html">Tableau</a>
+            <a title="liste" href="liste.html">Liste</a>
+            <a title="lien_menu" href="lien_menu.html">Lien Menu</a>
+            <a title="formulaire" href="formulaire.html" class="active">Formulaire</a>
+            <a title="multimedia" href="multimedia.html">Multimédia</a>
+            <a title="animation" href="animation.html">Animation</a>
+        </div>
+    </nav>
+    <main><!-- contenu principal -->
+        <h2>Formulaire</h2>
+        <section class="formulaire">
+            <!-- method=manière de faire circuler les données POST ou GET
+            action=URL de destination
+            enctype=pour envoyer les fichier correctement -->
+            <form method="POST" action="url de destination" enctype="multipart/form-data">
+
+                <label for="pseudo">Pseudo *</label>
+                <input type="text" id="pseudo" name="votre_pseudonyme" required><br>
+
+                <label for="prenom">Prénom</label>
+                <input type="text" id="prenom" name="votre_prenom" required><br>
+
+                <label for="motdepasse">Mot de passe</label>
+                <input type="text" id="motdepasse" name="votre_mot_de_passe" required><br>
+
+                <label for="email">Courriel</label>
+                <input type="email" id="email" name="votre_email"><br>
+
+                <label for="cv">Votre cv en .pdf</label>
+                <input type="file" id="cv" name="votre_cv"><br>
+
+                <p>Quels sont vos fruits préférés ?</p>
+
+                <label for="orange">Orange</label>
+                <input type="checkbox" id="orange" value="orange">
+
+                <label for="kiwi">Kiwi</label>
+                <input type="checkbox" id="kiwi" value="kiwi" ><br>
+
+                <label for="fraise">Fraise</label>
+                <input type="checkbox" id="fraise" value="fraise" ><br>
+
+                <label for="cerise">Cerise</label>
+                <input type="checkbox" id="cerise" value="cerise" checked><br>
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" cols="25" rows=""></textarea><br>
+
+                <input type="submit" name="envoyer" value="Envoyer">
+                <input type="reset" name="annuler" value="Annuler">
+                
+            </form>
+        </section>
+    </main><!-- fin de main -->
+    <footer>
+        <!-- pied de page -->
+    </footer>
+</body>
+</html>
