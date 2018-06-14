@@ -582,3 +582,26 @@ iframe[allowfullscreen]{
     transform-origin: 50% 120px;
     animation: bounceOut 0.7s ease-in-out;
 }
+#menuRotate dl:hover{
+    transform: rotate(-180deg);
+}
+#menuRotate dd{
+    transform: rotate(180deg);
+    animation: bounceIN 0.7s ease-in-out;
+}
+#menuRotate dt{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 23px;
+}
+#menuRotate dd a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    height: 24px;
+    padding: 3px 0;
+}
+#menuRotate dd a:hover{
+    background: whitesmoke;
+}
