@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome en cdn -->
     <link rel="stylesheet" href="css/fontawesome-all.css">
+ 
     <title>Maquette</title>
     <!-- la feuille de style -->
     <link rel="stylesheet" href="css/stylecorrection.css">
@@ -32,9 +33,8 @@
         <div class="clear"></div>
     </header>
     <nav>
-            <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
         <div id="ancreNav">
-            <a title="index" href="indexcorrection.html" class="active">Menu</a>
+            <a title="index" href="indexcorrection.html">Menu</a>
             <a title="texte" href="text.html">Texte</a>
             <a title="selecteur" href="selecteur.html">Selecteur</a>
             <a title="image" href="image.html">Image</a>
@@ -45,28 +45,25 @@
             <a title="lien_menu" href="lien_menu.html">Lien Menu</a>
             <a title="formulaire" href="formulaire.html">Formulaire</a>
             <a title="multimedia" href="multimedia.html">Multimédia</a>
-            <a title="animation" href="animation.html">Animation</a>
+            <a title="animation" href="animation.html" class="active">Animation</a>
         </div>
     </nav>
     <main><!-- contenu principal -->
-        <aside> <!-- contenu secondaire -->
-        </aside>
-        <section><!-- zone de contenu regroupement thématique , text, titres etc... -->
-            <div>
-                <!-- zone supplémentaire de contenu div -->
-                <h2>Titre 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente magni quaerat nam animi quasi praesentium sunt inventore obcaecati, itaque voluptate aliquam culpa recusandae, rerum eveniet ea ullam fugit distinctio optio.</p>
+        <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
+        <h2>Animation en CSS</h2>
+        <section>
+            <h3>Infobulles</h3>
+            <div class="infoBulle">
+                <p>
+                    <a href="#">Passez la souris ! <span>Je suis une pop-up   <i class="far fa-user"></i></span> </a>
+                </p>
+                <p>
+                    <a href="#">Ici aussi ! <span>Je suis une pop-up </span></a>
+                </p>
+                <p>
+                    <a href="#">Encore une fois ! <span>Je suis une pop-up</span></a>
+                </p>
             </div>
-            <span>
-                <!-- zone supplementaire de contenu span -->
-                <h3>Titre 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam nihil distinctio ipsam natus earum fugit animi. Nihil nemo illo ab at odio dolores facilis, facere repellendus, reiciendis ea autem.</p>
-            </span>
-            <article>
-                <!-- zone suppplémentaire de contenu article -->
-                <h4>Titre 4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quas at delectus sit dolore, quae, consequuntur pariatur corrupti obcaecati eius temporibus. Itaque laudantium maiores doloremque possimus et laboriosam iusto similique!</p>
-            </article>
         </section>
     </main><!-- fin de main -->
     <footer>

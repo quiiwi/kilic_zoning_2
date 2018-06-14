@@ -10,7 +10,7 @@
     <meta name="author" content="Kilic Aslan">
     <link href="https://fonts.googleapis.com/css?family=Anton|Lemonada:300,400|Oswald:300,400" rel="stylesheet"> 
     <!-- font awesome en cdn -->
-    <link rel="stylesheet" href="css/fontawesome-all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
     <title>Maquette</title>
     <!-- la feuille de style -->
     <link rel="stylesheet" href="css/stylecorrection.css">
@@ -32,9 +32,8 @@
         <div class="clear"></div>
     </header>
     <nav>
-            <i class="fas fa-heart"></i><i class="fas fa-heart"></i><i class="fas fa-heart"></i>
         <div id="ancreNav">
-            <a title="index" href="indexcorrection.html" class="active">Menu</a>
+            <a title="index" href="indexcorrection.html">Menu</a>
             <a title="texte" href="text.html">Texte</a>
             <a title="selecteur" href="selecteur.html">Selecteur</a>
             <a title="image" href="image.html">Image</a>
@@ -44,29 +43,29 @@
             <a title="liste" href="liste.html">Liste</a>
             <a title="lien_menu" href="lien_menu.html">Lien Menu</a>
             <a title="formulaire" href="formulaire.html">Formulaire</a>
-            <a title="multimedia" href="multimedia.html">Multimédia</a>
+            <a title="multimedia" href="multimedia.html" class="active">Multimédia</a>
             <a title="animation" href="animation.html">Animation</a>
         </div>
     </nav>
     <main><!-- contenu principal -->
-        <aside> <!-- contenu secondaire -->
-        </aside>
-        <section><!-- zone de contenu regroupement thématique , text, titres etc... -->
-            <div>
-                <!-- zone supplémentaire de contenu div -->
-                <h2>Titre 2</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente magni quaerat nam animi quasi praesentium sunt inventore obcaecati, itaque voluptate aliquam culpa recusandae, rerum eveniet ea ullam fugit distinctio optio.</p>
-            </div>
-            <span>
-                <!-- zone supplementaire de contenu span -->
-                <h3>Titre 3</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A quibusdam nihil distinctio ipsam natus earum fugit animi. Nihil nemo illo ab at odio dolores facilis, facere repellendus, reiciendis ea autem.</p>
-            </span>
-            <article>
-                <!-- zone suppplémentaire de contenu article -->
-                <h4>Titre 4</h4>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut quas at delectus sit dolore, quae, consequuntur pariatur corrupti obcaecati eius temporibus. Itaque laudantium maiores doloremque possimus et laboriosam iusto similique!</p>
-            </article>
+        <section>
+            <h3>Vidéo Youtube</h3>
+            <iframe height="400" src="https://www.youtube.com/embed/MHYWgf3VqoY" allowfullscreen></iframe>
+        </section>
+        <section class="audio">
+            <h3>Audio</h3>
+            <h4>Format mp3</h4>
+            <audio src="audio/son.mp3" controls></audio>
+            <h4>Format Ogg</h4>
+            <audio src="audio/son.ogg" controls></audio>
+            <h4>google map</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2782.66623979165!2d3.0837723157363!3d45.77787872047836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47f71be7834f15ab%3A0xd1fba4f0deab055f!2sMaison+du+Tourisme+de+Clermont-Ferrand!5e0!3m2!1sfr!2sfr!4v1528962489736" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </section>
+        <section class="bordure">
+            <iframe src="https://apod.nasa.gov/apod/astropix.html" allowfullscreen height="500px"></iframe>
+        </section>
+        <section>
+            <audio src="audio/sf_ambi_oiseaux_campagne_01.mp3" controls></audio>
         </section>
     </main><!-- fin de main -->
     <footer>
