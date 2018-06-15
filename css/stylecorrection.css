@@ -152,14 +152,21 @@ main{
     background: whitesmoke;
     width: 1000px;
     margin: 0 auto;
+    height: 1000px;
+
 }
 aside{
-    height: 250px;
-    background: #a6d6d3;
+    background: red;
+    height: 100%;
+    width: 250px;
+    float: left;
+
 }
 section{
     margin-top: 50px;
     padding: 20px;
+    width: 750px;
+    float: left;
 }
 
 button{
@@ -556,7 +563,7 @@ iframe[allowfullscreen]{
     height: 135px;
     top: 0;
     left: 0;
-    background: linear-gradient(lightcoral,lightblue);
+    background: linear-gradient(lightcoral,#d0e3fa);
 }
 #menuRotate .ombre {
     position: absolute;
@@ -574,20 +581,24 @@ iframe[allowfullscreen]{
     left:50%;
     margin-left: -75px;
     width: 150px;
-    height: 155px;
+    height: 165px;
     color: #09c;
     text-align:center;
     background: #333;
     border-radius: 0 0 6px rgba(0,0,0,0.7);
     transform-origin: 50% 120px;
-    animation: bounceOut 0.7s ease-in-out;
+    animation: bounceOut 1s ease-in-out;
+    border-radius: 5px 5px 5px 5px;
 }
 #menuRotate dl:hover{
     transform: rotate(-180deg);
+    animation: bounceIn 1s ease-in-out;
+   
 }
 #menuRotate dd{
     transform: rotate(180deg);
-    animation: bounceIN 0.7s ease-in-out;
+
+   
 }
 #menuRotate dt{
     position: absolute;
@@ -604,4 +615,18 @@ iframe[allowfullscreen]{
 }
 #menuRotate dd a:hover{
     background: whitesmoke;
+}
+@keyframes bounceIn{
+    0%{transform: rotate(0deg);}
+
+    to{transform: rotate(-180deg);}
+}
+@keyframes bounceOut{
+    from {transform: rotate(180deg);}
+    /* 33%{transform:rotate();} */
+    /* 66%{transform:rotate();} */
+    to{transform: rotate(0deg);}
+}
+.btnRot{
+    margin-bottom: 5px;
 }
