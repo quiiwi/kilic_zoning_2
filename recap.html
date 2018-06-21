@@ -6,10 +6,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/script.js"></script>
     <link rel="stylesheet" href="css/style_recap.css">
     <title>Menu de navigation et propriétés CSS</title>
 </head>
-<body>
+<body id="bgcolor">
 
     <!-- la balise NAV est dédiée à la navigation du site -->
     <nav>
@@ -21,6 +22,9 @@
     </nav><br />
 
     <section class="container">
+        <div>
+            <input type="button" onclick="mafonction()" value="changer la couleur">
+        </div>
         <h3>Aide mémoire des sélecteurs CSS déjà vus</h3>
             <ul>
                 <li><mark>*</mark> sélectionne TOUS les éléments de la page html</li>
@@ -37,121 +41,245 @@
             <h3>Propriétés CSS utilisées dans cette page</h3>
             <h4>Décrivez leur usage et leurs valeurs possibles</h4>
                 <ol>
-                    <li>background: permet de modifier le fond de l'élément; <br> EX: background: linear-gradiant (to left, #333, #fff);
-                        <ul> Les différents éléments utilisable dans le cadre de background:
-                            <li>red</li>
-                            <li>#333</li>
-                            <li>rgba(0,50,100,0.5)</li>
+                    <li class="grandLi">background: permet de modifier le fond de l'élément; <br> EX: background: linear-gradiant (to left, #333, #fff);
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de background:
+                            <li class="petitLi">red</li>
+                            <li class="petitLi">#333</li>
+                            <li class="petitLi">rgba(0,50,100,0.5)</li>
                         </ul>
                     </li>
 
-                    <li>color: permet de modifier la couleur de la police; <br> EX: color: lightblue;
-                        <ul> Les différents éléments utilisable dans le cadre de color:
-                            <li>red</li>
-                            <li>#333</li>
-                            <li>rgba(0,50,100,0.5)</li>
+                    <li class="grandLi">color: permet de modifier la couleur de la police; <br> EX: color: lightblue;
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de color:
+                            <li class="petitLi">red</li>
+                            <li class="petitLi">#333</li>
+                            <li class="petitLi">rgba(0,50,100,0.5)</li>
                         </ul>
                     </li>
 
-                    <li>float: permet de fixer un élément du body, dans un emplacmeent choisit ceci est appellé un "effet flottant" <br> EX: float: left;
-                        <ul> Les différents éléments utilisable dans le cadre du float:
-                            <li>right</li>
-                            <li>left</li>
-                            <li>inherit</li>
+                    <li class="grandLi">float: permet de fixer un élément du body, dans un emplacmeent choisit ceci est appellé un "effet flottant" <br> EX: float: left;
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre du float:
+                            <li class="petitLi">right</li>
+                            <li class="petitLi">left</li>
+                            <li class="petitLi">inherit</li>
                         </ul>
                     </li>
 
-                    <li>font-family: petmet de modifier la police de charactère; <br> EX: font-family: 'Courier New', Courier, monospace
-                        <ul> Les différents éléments utilisable dans le cadre de font-family:
-                            <li>'Courier New', Courier, monospace</li>
-                            <li>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</li>
-                            <li>'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif</li>
+                    <li class="grandLi">font-family: petmet de modifier la police de charactère; <br> EX: font-family: 'Courier New', Courier, monospace;
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de font-family:
+                            <li class="petitLi">'Courier New', Courier, monospace</li>
+                            <li class="petitLi">'Segoe UI', Tahoma, Geneva, Verdana, sans-serif</li>
+                            <li class="petitLi">'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif</li>
                         </ul>
                     </li>
-                    <li>font-size: taille de la police</li>
-                    <li>height: hauteur de l'élément</li>
-                    <li>left: position à partir de la gauche de la fenêtre</li>
-                    <li>line-height: hauteur de l'interligne</li>
-                    <li>margin: marges extérieures</li>
-                    <li>padding: marges intérieures</li>
-                    <li>position: position de l'élément dans la page (on n'a utilisé que la valeur (fixed) pour l'instant)</li>
-                    <li>text-align: alignement du texte</li>
-                    <li>text-decoration: changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)</li>
-                    <li>top: position à partir du haut de la fenêtre</li>
-                    <li>transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
-                    <li>width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, em, ...)</li>
+                    <li class="grandLi">font-size: petmet de modifier la taille de la police; <br> EX: font-size: 1.5em;</li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de font-size:
+                            <li class="petitLi">20px</li>
+                            <li class="petitLi">2em</li>
+                            <li class="petitLi">small</li>
+                            <li class="petitLi">......</li>
+                        </ul>
+                    <li class="grandLi">height: petmet de modifier la hauteur de l'élément (block et non inline) <br> EX: height: 8em;</li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de height:
+                            <li class="petitLi">200px</li>
+                            <li class="petitLi">50%</li>
+                            <li class="petitLi">20em</li>
+                        </ul>
+                    <li class="grandLi">left: permet de positionner un élément (block) depuis la gauche de la fenêtre <br> EX: left: 50px;</li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de left:
+                            <li class="petitLi">50px</li>
+                            <li class="petitLi">20%</li>
+                            <li class="petitLi">10em</li>
+                        </ul>
+                    <li class="grandLi">line-height: permet de rajouter une hauteur à chaque interligne <br> EX: line-height: 1%;</li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de line-height:
+                            <li class="petitLi">50px</li>
+                            <li class="petitLi">20%</li>
+                            <li class="petitLi">10em</li>
+                        </ul>
+                    <li class="grandLi">margin: petmet de rajouter des marges extérieures <br> EX: margin:5px;</li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de margin:
+                            <li class="petitLi">50px</li>
+                            <li class="petitLi">20%</li>
+                            <li class="petitLi">10em</li>
+                        </ul>
+                    <li class="grandLi">padding: petmet de rajouter des marges intérieures <br> EX: padding:5px;</li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de padding:
+                            <li class="petitLi">50px</li>
+                            <li class="petitLi">20%</li>
+                            <li class="petitLi">10em</li>
+                        </ul>
+                    <li class="grandLi">position: position de l'élément dans la page (on n'a utilisé que la valeur (fixed) pour l'instant) <br> EX: position: absolute; </li>
+                        <ul class="petitUl"> Les différents éléments utilisable dans le cadre de position:
+                            <li class="petitLi">absolute : par rapport à la page</li>
+                            <li class="petitLi">relative</li>
+                            <li class="petitLi">fixed : par rapport à la fenêtre</li>
+                        </ul>
+                    <li class="grandLi">text-align: alignement du texte</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">text-decoration: changement des valeurs héritées (ici le souligné qui est standard pour les liens sous tous les navigateurs est supprimé)</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">top: position à partir du haut de la fenêtre</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">transition: temps de transition lors d'une animation (ici sur les liens de la barre de menus)</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">width: largeur de l'élément par rapport à la taille de la fenêtre si on indique une valeur relative (%, em, ...)</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
                 </ol>
+                <div>
+                    skdfhskjdf
+                </div>
         </section>
 
         <section class="container3">
             <h3>Propriétés CSS à rechercher</h3>
             <h4>Recherchez les propriétés ci-dessous, faites des tests avec sur cette page depuis la console de débuggage pour tester les valeurs qu'elles peuvent prendre</h4>
                 <ol>
-                    <li>font-weight: sert à modifier la largeur des lettres. <br> EX: font-weight: bold;
-                        <ul>
-                            <li>100</li>
-                            <li>200</li>
-                            <li>300</li>
-                            <li>400</li>
-                            <li>500</li>
-                            <li>600</li>
-                            <li>700</li>
-                            <li>800</li>
-                            <li>900</li>
-                            <li>bold</li>
-                            <li>bolder</li>
-                            <li>inherit</li>
-                            <li>initial</li>
-                            <li>lighter</li>
-                            <li>normal</li>
-                            <li>unset</li>
+                    <li class="grandLi">font-weight: sert à modifier la largeur des lettres. <br> EX: font-weight: bold;
+                        <ul class="petitUl">
+                            <li class="petitLi">100</li>
+                            <li class="petitLi">200</li>
+                            <li class="petitLi">300</li>
+                            <li class="petitLi">400</li>
+                            <li class="petitLi">500</li>
+                            <li class="petitLi">600</li>
+                            <li class="petitLi">700</li>
+                            <li class="petitLi">800</li>
+                            <li class="petitLi">900</li>
+                            <li class="petitLi">bold</li>
+                            <li class="petitLi">bolder</li>
+                            <li class="petitLi">inherit</li>
+                            <li class="petitLi">initial</li>
+                            <li class="petitLi">lighter</li>
+                            <li class="petitLi">normal</li>
+                            <li class="petitLi">unset</li>
                         </ul>
                     </li>
 
-                    <li>letter-spacing: sert à modifier l'espace entre chaque lettre. <br> EX: letter-spacing: 2px;
-                        <ul>
-                            <li>4px</li>
-                            <li>0.5em</li>
-                            <li>inherit</li>
-                            <li>initial</li>
-                            <li>normal</li>
-                            <li>unset</li>
+                    <li class="grandLi">letter-spacing: sert à modifier l'espace entre chaque lettre. <br> EX: letter-spacing: 2px;
+                        <ul class="petitUl">
+                            <li class="petitLi">4px</li>
+                            <li class="petitLi">0.5em</li>
+                            <li class="petitLi">inherit</li>
+                            <li class="petitLi">initial</li>
+                            <li class="petitLi">normal</li>
+                            <li class="petitLi">unset</li>
                         </ul>
                     </li>
 
-                    <li>word-spacing: sert à modifier l'espace entre chaque mot. EX: word-spacing: 2px;
-                        <ul>
-                            <li>4px</li>
-                            <li>0.5em</li>
-                            <li>inherit</li>
-                            <li>initial</li>
-                            <li>normal</li>
-                            <li>unset</li>
+                    <li class="grandLi">word-spacing: sert à modifier l'espace entre chaque mot. <br> EX: word-spacing: 2px;
+                        <ul class="petitUl">
+                            <li class="petitLi">4px</li>
+                            <li class="petitLi">0.5em</li>
+                            <li class="petitLi">inherit</li>
+                            <li class="petitLi">initial</li>
+                            <li class="petitLi">normal</li>
+                            <li class="petitLi">unset</li>
                         </ul>
                     </li>
 
-                    <li>text-shadow: sert à ajouter une ombre aux lettres. EX: text-shadow: 2px 2px black;
-                        <ul>
-                            <li>inherit</li>
-                            <li>initial</li>
-                            <li>unset</li>
-                            <li>black</li>
-                            <li>rgba(125,95,255,0.5)</li>
+                    <li class="grandLi">text-shadow: sert à ajouter une ombre aux lettres. <br> EX: text-shadow: 2px 2px black;
+                        <ul class="petitUl">
+                            <li class="petitLi">inherit</li>
+                            <li class="petitLi">initial</li>
+                            <li class="petitLi">unset</li>
+                            <li class="petitLi">black</li>
+                            <li class="petitLi">rgba(125,95,255,0.5)</li>
                         </ul>
 
                     </li>
-                    <li>background-image: set à ajo</li>
-                    <li>background-size:</li>
-                    <li>opacity:</li>
-                    <li>border-style:</li>
-                    <li>box-shadow:</li>
-                    <li>list-style-image:</li>
-                    <li>border:</li>
-                    <li>border-radius:</li>
-                    <li>border-width:</li>
-                    <li>font-variant:</li>
-                    <li>background-color:</li>
-                    <li>!important;</li>
+                    <li class="grandLi">background-image: sert à ajouter une image <br> EX: background-image:(url)</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">background-size:</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">opacity: sert à modifier l'opacité de l'élément</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">border-style:</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">box-shadow: sert à rajouter une ombre aux boîtes</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">list-style-image:</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">border: sert à ajouter une bordure</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">border-radius: sert à arrondire les bords</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">border-width:</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">font-variant:</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">background-color: sert à modifier la couleur du background</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
+                    <li class="grandLi">!important;</li>
+                        <ul class="petitUl">
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                            <li class="petitLi"></li>
+                        </ul>
                 </ol>
         </section>
         <div class="clear"></div>
